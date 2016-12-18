@@ -5,7 +5,9 @@
 原画像を読み込み、表示する。
 
 ・ソースコード
+
 ORG=imread('iphone.png'); % 原画像の入力
+
 imagesc(ORG); axis image; % 画像の表示
 
 ・結果
@@ -14,8 +16,11 @@ imagesc(ORG); axis image; % 画像の表示
 原画像を1/2倍に縮小した後、2倍に拡大し、原画像を1/2サンプリングする。
 
 ・ソースコード
+
 IMG = imresize(ORG,0.5); % 画像の縮小
+
 IMG2 = imresize(IMG,2,'box'); % 画像の拡大
+
 imagesc(IMG2); axis image; % 画像の表示
 
 ・結果
@@ -24,8 +29,11 @@ imagesc(IMG2); axis image; % 画像の表示
 1/2サンプリングした画像をさらに1/2倍に縮小した後、4倍に拡大し、原画像を1/4サンプリングする。
 
 ・ソースコード
+
 IMG = imresize(IMG,0.5); % 画像の縮小
+
 IMG2 = imresize(IMG,4,'box'); % 画像の拡大
+
 imagesc(IMG2); axis image; % 画像の表示
 
 ・結果
@@ -34,8 +42,11 @@ imagesc(IMG2); axis image; % 画像の表示
 1/4サンプリングした画像をさらに1/2倍に縮小した後、8倍に拡大し、原画像を1/8サンプリングする。
 
 ・ソースコード
+
 IMG = imresize(IMG,0.5); % 画像の縮小
+
 IMG2 = imresize(IMG,8,'box'); % 画像の拡大
+
 imagesc(IMG2); axis image; % 画像の表示
 
 ・結果
@@ -44,8 +55,11 @@ imagesc(IMG2); axis image; % 画像の表示
 1/8サンプリングした画像をさらに1/2倍に縮小した後、16倍に拡大し、原画像を1/16サンプリングする。
 
 ・ソースコード
+
 IMG = imresize(IMG,0.5); % 画像の縮小
+
 IMG2 = imresize(IMG,16,'box'); % 画像の拡大
+
 imagesc(IMG2); axis image; % 画像の表示
 
 ・結果
@@ -54,8 +68,11 @@ imagesc(IMG2); axis image; % 画像の表示
 1/16サンプリングした画像をさらに1/2倍に縮小した後、32倍に拡大し、原画像を1/32サンプリングする。
 
 ・ソースコード
+
 IMG = imresize(IMG,0.5); % 画像の縮小
+
 IMG2 = imresize(IMG,32,'box'); % 画像の拡大
+
 imagesc(IMG2); axis image; % 画像の表示
 
 ・結果
