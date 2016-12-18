@@ -6,7 +6,6 @@
 
 ・ソースコード
 ORG=imread('iphone.png'); % 原画像の入力
-
 imagesc(ORG); axis image; % 画像の表示
 
 ・結果
