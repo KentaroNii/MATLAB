@@ -1,0 +1,38 @@
+# 課題8レポート
+
+「iphone.png」を原画像とする。この画像は縦616画素、横973画素の長方形のディジタルカラー画像である。
+
+原画像を読み込み、白黒濃淡画像に変換し表示する。
+
+・ソースコード
+
+ORG = imread('iphone.png'); % 画像の読み込み
+
+ORG = rgb2gray(ORG); % 白黒濃淡画像に変換
+
+imagesc(ORG); colormap(gray); colorbar; % 画像の表示
+
+・結果
+画像
+
+色を128で2段階に分けて画像を二値化し、表示する。
+
+・ソースコード
+
+IMG = ORG > 128; % 閾値128で二値化
+
+imagesc(IMG); colormap(gray); colorbar; % 画像の表示
+
+・結果
+画像
+
+二値化された画像の連結成分にラベルをつけ、表示する。
+
+・ソースコード
+
+IMG = bwlabeln(IMG);
+
+imagesc(IMG); colormap(jet); colorbar; % 画像の表示
+
+・結果
+画像
